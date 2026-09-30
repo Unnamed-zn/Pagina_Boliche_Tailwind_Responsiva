@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Saira:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-indigo-blue: oklch(0.3977 0.2022 280.88);
+    --color-dark-blue: oklch(0.1749 0.0643 272.32);
+    --font-saira: "Saira", sans-serif;
+    --font-tomorrow: "Tomorrow", sans-serif;
+    --font-carter-one: "Carter One", sans-serif;
+}
+
+.header {
+    @apply flex flex-col items-center w-screen h-fit px-[8%] py-[2vh] gap-[1.5vh] bg-dark-blue xl:flex-row xl:place-content-between;
+}
+
+.logo-icon {
+    @apply flex flex-row items-center w-full place-content-between text-justify xl:w-fit xl:gap-[2vw];
+}
+
+.icon-container {
+    @apply h-[10vh] object-cover w-fit md:h-[15vh];
+}
+
+.icon-img {
+    @apply h-full;
+}
+
+.logo {
+    @apply  font-carter-one font-bold text-justify text-indigo-blue text-3xl text-shadow-[0_0_30px] xl:w-[9vw];
+}
+
+.bowl {
+    @apply text-3xl xl:text-5xl;
+}
+
+.header-link-container {
+    @apply flex flex-row place-content-between w-full xl:gap-[3vw] xl:w-fit;
+}
+
+.header-link {
+    @apply font-bold block shadow-[0_0_5px_white] px-[0.35rem] py-[0.2rem] rounded-md bg-black/10 font-tomorrow text-indigo-blue transition duration-300 ease-linear hover:shadow-[0_0_15px_white] hover:scale-105 text-xs xl:text-2xl;
+}
+
