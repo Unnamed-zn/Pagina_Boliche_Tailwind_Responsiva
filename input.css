@@ -8,6 +8,7 @@
     --color-dark-blue: oklch(0.1749 0.0643 272.32);
     --color-gloom-purple: oklch(56.3% 0.223 298.6);
     --color-azuremyst: oklch(0.7236 0.1717 312.44);
+    --color-clear-pink: oklch(0.8577 0.0867 321.24);
     --font-saira: "Saira", sans-serif;
     --font-tomorrow: "Tomorrow", sans-serif;
     --font-carter-one: "Carter One", sans-serif;
@@ -46,11 +47,11 @@
 }
 
 .header-link {
-    @apply font-bold block shadow-[0_0_5px_white] px-[0.35rem] py-[0.2rem] rounded-md bg-black/10 font-tomorrow text-indigo-blue transition duration-300 ease-linear hover:shadow-[0_0_15px_white] hover:scale-105 text-xs md:text-2xl xl:text-2xl;
+    @apply font-bold block shadow-[0_0_5px] shadow-clear-pink px-[0.35rem] py-[0.2rem] rounded-md bg-black/10 font-tomorrow text-indigo-blue transition duration-300 ease-linear hover:shadow-[0_0_15px] hover:scale-105 text-xs md:text-2xl xl:text-2xl;
 }
 
 .main {
-    @apply grid grid-rows-1 gap-[2vh] h-fit w-full mt-[3vh] px-[6vw];
+    @apply grid grid-cols-1 gap-[2vh] h-fit w-full mt-[3vh] px-[6vw];
 }
 
 .content-block {
