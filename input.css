@@ -55,7 +55,7 @@
 }
 
 .content-block {
-    @apply bg-azuremyst grid grid-cols-1 place-items-center rounded-xl gap-[2vh] xl:gap-[2vw] shadow-[0_0_5px_black] py-[2vw] px-[2vw] xl:grid-cols-2;
+    @apply bg-azuremyst grid grid-cols-1 place-items-center rounded-xl gap-[2vh] xl:gap-[2vw] shadow-[0_0_1rem_black] py-[2vw] px-[2vw] border-4 border-black/0 xl:grid-cols-2 transition duration-200 ease-linear hover:shadow-[0_0_3rem_black] hover:border-purple-800/90;
 }
 
 .image-container {
